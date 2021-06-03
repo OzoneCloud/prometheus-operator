@@ -369,7 +369,7 @@ type PrometheusSpec struct {
 	EnforcedTargetLimit *uint64 `json:"enforcedTargetLimit,omitempty"`
 
 	// Ozone specific
-	DNSPolicy string `json:"dnsPolicy,omitempty"`
+	DNSPolicy v1.DNSPolicy `json:"dnsPolicy,omitempty"`
 	DNSConfig *v1.PodDNSConfig `json:"dnsConfig,omitempty"`
 }
 
