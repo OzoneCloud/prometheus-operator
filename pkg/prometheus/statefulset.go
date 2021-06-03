@@ -852,6 +852,8 @@ func makeStatefulSetSpec(p monitoringv1.Prometheus, c *operator.Config, shard in
 				Tolerations:                   p.Spec.Tolerations,
 				Affinity:                      p.Spec.Affinity,
 				TopologySpreadConstraints:     p.Spec.TopologySpreadConstraints,
+				DNSPolicy:                     p.Spec.DNSPolicy,
+				DNSConfig:                     p.Spec.DNSConfig,
 			},
 		},
 	}, nil

@@ -367,6 +367,10 @@ type PrometheusSpec struct {
 	// the desired limit.
 	// Note that if TargetLimit is higher that value will be taken instead.
 	EnforcedTargetLimit *uint64 `json:"enforcedTargetLimit,omitempty"`
+
+	// Ozone specific
+	DNSPolicy string `json:"dnsPolicy,omitempty"`
+	DNSConfig *v1.PodDNSConfig `json:"dnsConfig,omitempty"`
 }
 
 // PrometheusRuleExcludeConfig enables users to configure excluded PrometheusRule names and their namespaces
