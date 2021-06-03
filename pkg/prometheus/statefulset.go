@@ -915,6 +915,8 @@ func makeStatefulSetSpec(p monitoringv1.Prometheus, c *Config, ruleConfigMapName
 				Volumes:                       volumes,
 				Tolerations:                   p.Spec.Tolerations,
 				Affinity:                      p.Spec.Affinity,
+				DNSPolicy:                     p.Spec.DNSPolicy,
+				DNSConfig:                     p.Spec.DNSConfig,
 			},
 		},
 	}, nil

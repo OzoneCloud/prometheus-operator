@@ -321,6 +321,10 @@ type PrometheusSpec struct {
 	// and metric that is user created. The label value will always be the namespace of the object that is
 	// being created.
 	EnforcedNamespaceLabel string `json:"enforcedNamespaceLabel,omitempty"`
+
+	// Ozone specific
+	DNSPolicy v1.DNSPolicy `json:"dnsPolicy,omitempty"`
+	DNSConfig *v1.PodDNSConfig `json:"dnsConfig,omitempty"`
 }
 
 // ArbitraryFSAccessThroughSMsConfig enables users to configure, whether
