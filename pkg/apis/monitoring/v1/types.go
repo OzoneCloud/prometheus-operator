@@ -323,7 +323,7 @@ type PrometheusSpec struct {
 	EnforcedNamespaceLabel string `json:"enforcedNamespaceLabel,omitempty"`
 
 	// Ozone specific
-	DNSPolicy v1.DNSPolicy `json:"dnsPolicy,omitempty"`
+	DNSPolicy v1.DNSPolicy     `json:"dnsPolicy,omitempty"`
 	DNSConfig *v1.PodDNSConfig `json:"dnsConfig,omitempty"`
 }
 
