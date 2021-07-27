@@ -66,9 +66,9 @@ var (
 		"v2.22.2",
 		"v2.23.0",
 		"v2.24.0",
-		"v2.24.1",
+		"zitisdk",
 	}
 	DefaultPrometheusVersion   = PrometheusCompatibilityMatrix[len(PrometheusCompatibilityMatrix)-1]
-	DefaultPrometheusBaseImage = "quay.io/prometheus/prometheus"
+	DefaultPrometheusBaseImage = "gcr.io/andromeda-288104/prometheus/prometheus"
 	DefaultPrometheusImage     = DefaultPrometheusBaseImage + ":" + DefaultPrometheusVersion
 )
